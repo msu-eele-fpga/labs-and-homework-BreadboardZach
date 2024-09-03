@@ -29,4 +29,4 @@ printf("I have a love hate relationship with coding\n");
 
 My mental health is controlled by (https://pickerwheel.com/tools/random-number-generator/)
 
-![Genaric Image](https://pixabay.com/photos/web-network-link-blue-network-2925929/)
+![Genaric Image](https://docs.github.com/assets/cb-39744/mw-1440/images/help/writing/image-rendered.webp)
