@@ -19,9 +19,9 @@ printf("I have a love hate relationship with coding\n");
 | ---- | ----- |
 |  My  | Table |
 
--John Washington
-*Adams Thomas
-+Jefferton Washingas
+- John Washington
+* Adams Thomas
++ Jefferton Washingas
 
 1. Madisoe Monison
 2. Jaohn Quincy Washington
@@ -29,4 +29,4 @@ printf("I have a love hate relationship with coding\n");
 
 My mental health is controlled by (https://pickerwheel.com/tools/random-number-generator/)
 
-!(https://pixabay.com/photos/web-network-link-blue-network-2925929/)
+![Genaric Image](https://pixabay.com/photos/web-network-link-blue-network-2925929/)
