@@ -4,7 +4,7 @@
 This lab we wrote a simple synchronozer and tested it on Questa.
 
 ## Deliverables
-![synchronizer screenshot](labs-and-homework-BreadboardZach/docs/assets/Screenies/SyncHW3)
+<synchronizerScreenshot><img src="assets/Screenies/SyncHW3.png">
 
-![synchronizer WF screenshot](labs-and-homework-BreadboardZach/docs/assets/Screenies/WaveformHW3)
+<synchronizerWFScreenshot><img src="assets/Screenies/WaveformHW3.png">
 
