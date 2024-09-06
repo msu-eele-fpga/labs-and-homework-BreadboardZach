@@ -1,0 +1,29 @@
+vsim work.synchronizer_tb
+# vsim work.synchronizer_tb 
+# Start time: 13:51:57 on Sep 06,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.synchronizer_tb(testbench)#1
+# Load canceled
+add wave sim:/synchronizer_tb/*
+run
+# ** Note: all tests passed!
+#    Time: 100 ns  Iteration: 0  Instance: /synchronizer_tb
+# 1
+# Break in Process check_output at C:/Users/zachg/labs-and-homework-BreadboardZach/sim/synchronizer/synchronizer_tb.vhd line 111
+run
+# ** Note: all tests passed!
+#    Time: 200 ns  Iteration: 0  Instance: /synchronizer_tb
+# 1
+# Break in Process check_output at C:/Users/zachg/labs-and-homework-BreadboardZach/sim/synchronizer/synchronizer_tb.vhd line 111
+run
+# ** Note: all tests passed!
+#    Time: 300 ns  Iteration: 0  Instance: /synchronizer_tb
+# 1
+# Break in Process check_output at C:/Users/zachg/labs-and-homework-BreadboardZach/sim/synchronizer/synchronizer_tb.vhd line 111
+quit -sim
+# End time: 13:53:50 on Sep 06,2024, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 1
