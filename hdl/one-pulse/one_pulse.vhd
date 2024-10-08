@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.assert_pkg.all;
-use work.print_pkg.all;
-use work.tb_pkg.all;
+--use work.assert_pkg.all;
+--use work.print_pkg.all;
+--use work.tb_pkg.all;
 
 entity one_pulse is
 port (
@@ -61,7 +61,7 @@ begin
   end process next_state_logic;
 
  
-  output_logic : process(current_state, pulse)
+  output_logic : process(current_state) --changed from (current_state, pulse)
   begin
     case current_state is
       when waitt =>

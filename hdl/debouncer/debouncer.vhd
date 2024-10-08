@@ -1,9 +1,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.assert_pkg.all;
-use work.print_pkg.all;
-use work.tb_pkg.all;
+--use work.assert_pkg.all;
+--use work.print_pkg.all;
+--use work.tb_pkg.all;
 
 entity debouncer is
   generic (clk_period : time := 20 ns;
@@ -25,16 +25,15 @@ signal enable : boolean;
 
 begin
 
-process(clk,input)
+process(clk)
   begin
 
   if (rst = '1') then
     counter <= 0;
     debounced <= '0';
     enable <= true;
-  end if;
 
-    if rising_edge(clk) then
+    elsif rising_edge(clk) then
 	prv_input <= input;
       if enable then
         if (input = '1' and prv_input = '0') then
@@ -44,7 +43,7 @@ process(clk,input)
           debounced <= '0';
           enable <= false;
         end if;
-      elsif (enable = false) then
+      else --(enable = false) then
         if (counter = debounce_limit - 2) then
           counter <= 0;
           enable <= true;
