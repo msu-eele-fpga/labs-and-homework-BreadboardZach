@@ -11,7 +11,6 @@ port (clk : in std_ulogic;
       push_button : in std_ulogic;
       switches : in std_ulogic_vector(3 downto 0);
       hps_led_control : in boolean;
-      SYS_CLKs_sec : in std_ulogic_vector(31 downto 0);
       base_period : in unsigned(7 downto 0);
       led_reg : in std_ulogic_vector(7 downto 0);
       led : out std_ulogic_vector(7 downto 0)
@@ -195,7 +194,7 @@ period_base_clk<= period_base_clk_full_prec(N_BITS_CLK_CYCLES_FULL-1 downto 4);-
                 
             elsif hps_led_control then
                 
-            elsif(hps_led_control=false) then
+            elsif(hps_led_control = false) then 
                 
                 current_state<=next_state;
 					 
