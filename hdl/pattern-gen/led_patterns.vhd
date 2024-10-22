@@ -225,9 +225,9 @@ period_base_clk<= period_base_clk_full_prec(N_BITS_CLK_CYCLES_FULL-1 downto 4);-
 		
 	end process;
 	
-OUTPUT_LOGIC : process (current_state, switches)
+OUTPUT_LOGIC : process (current_state, switches,hps_led_control)
 begin
-
+    if (hps_led_control = false) then
      case current_state is
         when show_states => led(3 downto 0)<=switches;
                             led(6 downto 4)<="000";
@@ -254,6 +254,9 @@ begin
 								  prev_state <= current_state;
         when others => null;
     end case;
+  else
+    led(6 downto 0) <= led_reg(6 downto 0);
+  end if;
    
 end process;
 end architecture; 
