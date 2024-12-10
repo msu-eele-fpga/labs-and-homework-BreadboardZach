@@ -1,5 +1,9 @@
 #include "socfpga_cyclone5_de10nano.dtsi"
 
 /{
+	led_patterns: led_patterns@ff200000 {
+		compatible = "Guentherman,led-patterns";
+		reg = <0xff200000 16>;
+	};
 
 };
